@@ -16,4 +16,3 @@ public class Alkalmazott {
 		osszefuzott = nev + "\t"+fizetes;
 		return osszefuzott;
 	}
-}
