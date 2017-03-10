@@ -19,7 +19,7 @@ public class CalculatorImpl implements Calculator {
 
 	public double division(double a, double b)throws ZeroDivisonException {
 		if(b==0){
-			throw new ZeroDivisonException("I got a tiny penis!");
+			throw new ZeroDivisonException("Error!\nDivision by zero!");
 		}
 		else
 			return a / (double)b;
