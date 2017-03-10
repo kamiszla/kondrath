@@ -1,6 +1,7 @@
 package hu.uni.miskolc.calculator.service.impl;
 
 import hu.uni.miskolc.calculator.service.Calculator;
+import hu.uni.miskolc.calculator.service.ZeroDivisonException;
 
 public class CalculatorImpl implements Calculator {
 
@@ -16,8 +17,12 @@ public class CalculatorImpl implements Calculator {
 		return a*b;
 	}
 
-	public double division(double a, double b) {
-		return a / (double)b;
+	public double division(double a, double b)throws ZeroDivisonException {
+		if(b==0){
+			throw new ZeroDivisonException("I got a tiny penis!");
+		}
+		else
+			return a / (double)b;
 	}
 
 }
